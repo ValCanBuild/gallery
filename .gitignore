@@ -1,0 +1,14 @@
+# build output
+.next
+out
+
+# dependencies
+node_modules
+deploy-server/node_modules
+package-lock.json
+
+# logs
+npm-debug.log
+
+# other
+.DS_Store
