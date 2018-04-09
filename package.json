@@ -1,5 +1,5 @@
 {
-  "name": "@public/microlink-gallery",
+  "name": "microlink-gallery",
   "version": "0.0.0",
   "private": true,
   "description": "Gallery of sites using microlink.io",
@@ -12,15 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/microlinkhq/demos.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/microlinkhq/demos/issues"
   },
   "homepage": "https://github.com/microlinkhq/demos#readme",
   "devDependencies": {
-    "browser-sync": "~2.23.6",
-    "standard": "~11.0.1"
+    "browser-sync": "latest",
+    "standard": "latest"
   }
 }
