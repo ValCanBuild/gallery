@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charSet="utf-8" class="next-head" />
+  <meta name="theme-color" content="#FF8AEF" class="next-head" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/global/favicons/apple-touch-icon-57x57.png" class="next-head" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/global/favicons/apple-touch-icon-114x114.png" class="next-head" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/global/favicons/apple-touch-icon-72x72.png" class="next-head" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/global/favicons/apple-touch-icon-144x144.png" class="next-head" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/static/global/favicons/apple-touch-icon-60x60.png" class="next-head" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/static/global/favicons/apple-touch-icon-120x120.png" class="next-head" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/global/favicons/apple-touch-icon-76x76.png" class="next-head" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/global/favicons/apple-touch-icon-152x152.png" class="next-head" />
+  <link rel="icon" type="image/png" href="/static/global/favicons/favicon-196x196.png" sizes="196x196" class="next-head" />
+  <link rel="icon" type="image/png" href="/static/global/favicons/favicon-96x96.png" sizes="96x96" class="next-head" />
+  <link rel="icon" type="image/png" href="/static/global/favicons/favicon-32x32.png" sizes="32x32" class="next-head" />
+  <link rel="icon" type="image/png" href="/static/global/favicons/favicon-16x16.png" sizes="16x16" class="next-head" />
+  <link rel="icon" type="image/png" href="/static/global/favicons/favicon-128.png" sizes="128x128" class="next-head" />
+  <meta name="application-name" content=" " class="next-head" />
+  <meta name="msapplication-TileColor" content="#9239FF" class="next-head" />
+  <meta name="msapplication-TileImage" content="/static/global/favicons/mstile-144x144.png" class="next-head" />
+  <meta name="msapplication-square70x70logo" content="/static/global/favicons/mstile-70x70.png" class="next-head" />
+  <meta name="msapplication-square150x150logo" content="/static/global/favicons/mstile-150x150.png" class="next-head" />
+  <meta name="msapplication-wide310x150logo" content="/static/global/favicons/mstile-310x150.png" class="next-head" />
+  <meta name="msapplication-square310x310logo" content="/static/global/favicons/mstile-310x310.png" class="next-head" />
+  <meta name="google-site-verification" content="d68hWVY-5ogpnvUFD4RpcN-5W_ja2f6iGg8AqDWjb40" class="next-head" />
+  <meta name="description" content="One of the most obvious signs that a site is made with Next.JS is that you load the page, you click a link to another section and it loads instantly. That’s because when a page is loaded, Next.JS will download in the background all the other pages linked with tags.
+" class="next-head" />
+  <meta name="twitter:card" content="summary_large_image" class="next-head" />
+  <meta name="twitter:site" content="@scaleapi" class="next-head" />
+  <meta name="twitter:creator" content="@scaleapi" class="next-head" />
+  <meta name="twitter:title" content="Increasing the Performance of Dynamic Next.JS Websites — Scale API" class="next-head" />
+  <meta name="twitter:description" content="One of the most obvious signs that a site is made with Next.JS is that you load the page, you click a link to another section and it loads instantly. That’s because when a page is loaded, Next.JS will download in the background all the other pages linked with tags.
+" class="next-head" />
+  <meta name="twitter:image" content="https://www.scaleapi.com/static/global/twitter-card.png" class="next-head" />
+  <meta property="og:url" content="https://www.scaleapi.com/blog/post" class="next-head" />
+  <meta property="og:type" content="article" class="next-head" />
+  <meta property="og:title" content="Increasing the Performance of Dynamic Next.JS Websites — Scale API" class="next-head" />
+  <meta property="og:description" content="One of the most obvious signs that a site is made with Next.JS is that you load the page, you click a link to another section and it loads instantly. That’s because when a page is loaded, Next.JS will download in the background all the other pages linked with tags.
+" class="next-head" />
+  <meta property="og:image" content="https://www.scaleapi.com/static/global/facebook-card.png" class="next-head" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" class="next-head" />
+  <title class="next-head">Increasing the Performance of Dynamic Next.JS Websites — Scale API</title>
+  <link rel="preload" href="/_next/47af7160-1d8f-4117-a808-9335b1447523/page/blog/post.js" as="script" />
+  <link rel="preload" href="/_next/47af7160-1d8f-4117-a808-9335b1447523/page/_error.js" as="script" />
+  <link rel="preload" href="/_next/a64c4bbbd90b61bfc525c44cd54a2036/app.js" as="script" />
+  <style id="__jsx-864665952">
+    .link-preview {
+      font-weight: normal;
+      text-decoration: none;
+      display: block;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    @font-face {
+      font-family: "HarmoniaSans W01";
+      src: url("/static/global/fonts/a5b66773-6a36-469a-8f45-e08448130bf2.eot?#iefix");
+      src: url("/static/global/fonts/a5b66773-6a36-469a-8f45-e08448130bf2.eot?#iefix") format("eot"), url("/static/global/fonts/3ba56aa2-c01d-4bfc-aae4-eac13ee2ebbc.woff2") format("woff2"), url("/static/global/fonts/51f1c13a-2c9b-4cba-9cbf-93317cbd3e10.woff") format("woff"), url("/static/global/fonts/7b11ae47-5126-4c06-8f61-fbee4b6a8461.ttf") format("truetype"), url("/static/global/fonts/d6936923-56f5-4284-bb73-3230f8a49594.svg#d6936923-56f5-4284-bb73-3230f8a49594") format("svg");
+      font-weight: normal;
+    }
+
+    @font-face {
+      font-family: "HarmoniaSans W01";
+      src: url("/static/global/fonts/cd8a7ca1-a1a1-4902-9824-18890229b553.eot?#iefix");
+      src: url("/static/global/fonts/cd8a7ca1-a1a1-4902-9824-18890229b553.eot?#iefix") format("eot"), url("/static/global/fonts/08591efc-f43b-4dc0-b066-e39bb77fd0d9.woff2") format("woff2"), url("/static/global/fonts/bb2822e9-2055-4c95-bd66-438a33d71a60.woff") format("woff"), url("/static/global/fonts/1796e78c-3f90-4d62-a510-d2f1ebc88d86.ttf") format("truetype"), url("/static/global/fonts/db703c36-bf80-4647-8190-abc666705582.svg#db703c36-bf80-4647-8190-abc666705582") format("svg");
+      font-weight: bold;
+    }
+
+    @font-face {
+      font-family: "HarmoniaSans W01";
+      src: url("/static/global/fonts/9aa36f2e-ec77-4f6c-9698-ed44812c5b2f.eot?#iefix");
+      src: url("/static/global/fonts/9aa36f2e-ec77-4f6c-9698-ed44812c5b2f.eot?#iefix") format("eot"), url("/static/global/fonts/858f50d9-f514-4dfa-8c90-310324ae3bbc.woff2") format("woff2"), url("/static/global/fonts/63546f2e-ec1b-481d-93af-81d9530d6686.woff") format("woff"), url("/static/global/fonts/71109fca-9801-4be6-9b53-3671d1e01e51.ttf") format("truetype"), url("/static/global/fonts/4198fb01-7e38-44b1-86a6-de6d2dea30f7.svg#4198fb01-7e38-44b1-86a6-de6d2dea30f7") format("svg");
+      font-style: italic;
+    }
+
+    :root {
+      --main-color: #06c;
+      --text-color: rgba(0, 0, 0, .86);
+      --border-radius: 8px;
+      --pill-border-radius: 12px;
+      --link-color: #247EFF;
+      --bg-gray-light: #F5F4F9;
+      --bg-gray-light-1: var(--bg-gray-light);
+      --bg-gray-light-2: #f6f6f6;
+      --bg-gray-light-3: #F5F9FA;
+      --border-gray-light: #e0e0e0;
+      --box-shadow: 0 20px 60px -10px rgba(0, 0, 0, .2);
+      --color-primary: #00B8F4;
+      --color-accept: #7ED321;
+      --color-reject: #EB5424;
+      --color-sensor-fusion: #9631E7;
+      --color-semantic-segmentation: #E23E7C;
+      --color-cuboids: #3CC0A7;
+      --color-polygons: #FF7600;
+      --color-twod-boxes: #63B31C;
+      --color-lines-splines: #1F77E0;
+      --color-transcription: #FF866E;
+      --color-ocr-transcription: #38E8BA;
+      --color-categorization: #FF9BEE;
+      --color-data-collection: #4A7AFA;
+      --color-comparison: #DA57C8;
+      --color-image-recognition: #F9B25F;
+      --font-family: "HarmoniaSans W01", -apple-system, Arial, Sans-Serif;
+      --font-family-code: Menlo, Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+      --grid-gap: 20px;
+    }
+
+    @media only screen and (min-width :768px) {
+      :root {
+        --grid-gap: 30px;
+      }
+    }
+
+    body {
+      color: var(--text-color);
+      font-size: 16px;
+      font-family: -apple-system, Arial, Sans-Serif;
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-weight: normal;
+      min-width: 320px;
+      margin: 0;
+      padding: 0;
+      font-stretch: normal;
+      font-style: normal;
+    }
+
+    @media only screen and (min-width :768px) {
+      body {
+        font-family: var(--font-family);
+      }
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    body.ReactModal__Body--open {
+      overflow: hidden !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: black;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #2773FF;
+      outline: none;
+      cursor: pointer;
+    }
+
+    li,
+    p {
+      line-height: 2;
+    }
+
+    table {
+      border-collapse: collapse;
+      padding: 0;
+    }
+
+    img,
+    svg {
+      max-width: 100%;
+    }
+
+    img {
+      display: block;
+    }
+
+    *:focus {
+      outline: 0;
+    }
+
+    code,
+    pre {
+      font-family: var(--font-family-code);
+    }
+
+    ::-moz-selection {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+    }
+
+    ::selection {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+    }
+
+    .ReactModalPortal>div {
+      opacity: 0;
+    }
+
+    .ReactModalPortal .ReactModal__Overlay {
+      z-index: 10000;
+      -webkit-transition: opacity 200ms ease-in-out;
+      -webkit-transition: opacity 200ms ease-in-out;
+      transition: opacity 200ms ease-in-out;
+    }
+
+    .ReactModalPortal .ReactModal__Overlay--after-open {
+      opacity: 1;
+    }
+
+    .ReactModalPortal .ReactModal__Overlay--before-close {
+      opacity: 0;
+    }
+
+    .__react_component_tooltip.type-light.show {
+      opacity: 1 !important;
+      -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02), 0 0 2px rgba(0, 0, 0, 0.02) !important;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02), 0 0 2px rgba(0, 0, 0, 0.02) !important;
+      padding: 12px !important;
+    }
+
+    .__react_component_tooltip.type-light.show.place-top:after {
+      display: none;
+    }
+  </style>
+  <style id="__jsx-929027911">
+    span.jsx-929027911 {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-left: 6px;
+      margin-bottom: -2px;
+    }
+  </style>
+  <style id="__jsx-3387064800">
+    .nav-trigger.jsx-3387064800 {
+      width: 24px;
+      height: 30px;
+      position: relative;
+      background: transparent;
+      border: none;
+      vertical-align: middle;
+      margin: 0;
+      cursor: pointer;
+      display: block;
+      float: right;
+      padding: 0;
+      top: -2px;
+    }
+
+    @media only screen and (min-width :768px) {
+      .nav-trigger.jsx-3387064800 {
+        display: none;
+      }
+    }
+
+    .nav-trigger.jsx-3387064800:focus {
+      outline: 0;
+    }
+
+    .nav-trigger.jsx-3387064800:hover span.jsx-3387064800,
+    .nav-trigger.jsx-3387064800:hover span.jsx-3387064800:before,
+    .nav-trigger.jsx-3387064800:hover span.jsx-3387064800:after {
+      background: #000;
+    }
+
+    .nav-trigger.jsx-3387064800:before {
+      content: '';
+      opacity: 0;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: transparent;
+      -webkit-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+    }
+
+    .nav-trigger.jsx-3387064800 span.jsx-3387064800 {
+      display: block;
+      position: relative;
+    }
+
+    .nav-trigger.jsx-3387064800 span.jsx-3387064800:before,
+    .nav-trigger.jsx-3387064800 span.jsx-3387064800:after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+
+    .nav-trigger.jsx-3387064800 span.jsx-3387064800:before {
+      top: -6px;
+    }
+
+    .nav-trigger.jsx-3387064800 span.jsx-3387064800:after {
+      bottom: -6px;
+    }
+
+    .nav-trigger.jsx-3387064800 span.jsx-3387064800,
+    .nav-trigger.jsx-3387064800 span.jsx-3387064800:before,
+    .nav-trigger.jsx-3387064800 span.jsx-3387064800:after {
+      width: 100%;
+      height: 2px;
+      background: #000;
+      -webkit-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+    }
+
+    .nav-trigger.is-active.jsx-3387064800:before {
+      opacity: 1;
+      width: 20px;
+      height: 20px;
+    }
+
+    .nav-trigger.is-active.jsx-3387064800 span.jsx-3387064800 {
+      background: transparent;
+    }
+
+    .nav-trigger.is-active.jsx-3387064800 span.jsx-3387064800:before {
+      top: 0;
+      -webkit-transform: rotate(225deg);
+      -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+      transform: rotate(225deg);
+    }
+
+    .nav-trigger.is-active.jsx-3387064800 span.jsx-3387064800:after {
+      bottom: 0;
+      -webkit-transform: rotate(-225deg);
+      -webkit-transform: rotate(-225deg);
+      -ms-transform: rotate(-225deg);
+      transform: rotate(-225deg);
+    }
+  </style>
+  <style id="__jsx-1633575620">
+    svg.jsx-1633575620 {
+      display: block;
+    }
+
+    @media (min-width:320px) and (max-width:480px) {
+      svg.jsx-1633575620 {
+        fill: black;
+      }
+    }
+  </style>
+  <style id="__jsx-1750654240">
+    h1.logo.jsx-1750654240 {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      display: inline-block;
+      width: 60px;
+    }
+
+    @media only screen and (min-width :768px) {
+      h1.logo.jsx-1750654240 {
+        margin-top: 4px;
+      }
+    }
+  </style>
+  <style id="__jsx-2705945360">
+    span.jsx-2705945360 {
+      border-top: 1px solid #eee;
+      display: block;
+    }
+
+    @media only screen and (min-width :768px) {
+      span.jsx-2705945360 {
+        display: inline;
+        border: 0;
+      }
+    }
+
+    a.jsx-2705945360 {
+      color: #333;
+      font-weight: normal;
+      line-height: 3;
+      cursor: pointer;
+      display: block;
+      -webkit-transition: 0.2s ease-out all;
+      -webkit-transition: 0.2s ease-out all;
+      transition: 0.2s ease-out all;
+    }
+
+    @media only screen and (min-width :768px) {
+      a.jsx-2705945360 {
+        color: #000;
+        display: inline-block;
+        line-height: 2;
+      }
+      a.jsx-2705945360:hover {
+        opacity: .7;
+      }
+    }
+  </style>
+  <style id="__jsx-1204389865">
+    ul.jsx-1204389865 {
+      padding: 0;
+      margin: 0;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+    }
+
+    @media only screen and (min-width :768px) {
+      ul.jsx-1204389865 {
+        border: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 340px;
+      }
+    }
+
+    @media only screen and (min-width :992px) {
+      ul.jsx-1204389865 {
+        width: 530px;
+      }
+    }
+
+    li.jsx-1204389865 {
+      display: block;
+      position: relative;
+    }
+
+    @media only screen and (min-width :768px) {
+      li.jsx-1204389865 {
+        border: 0;
+        line-height: 2;
+        display: inline-block;
+        -webkit-animation: none;
+        -webkit-animation: none;
+        animation: none;
+      }
+    }
+
+    @media only screen and (min-width :992px) {
+      li.jsx-1204389865 {
+        border: 0;
+      }
+    }
+
+    li.jsx-1204389865:last-child {
+      margin-right: 0;
+    }
+
+    .self-driving.jsx-1204389865 {
+      display: block;
+    }
+
+    @media only screen and (min-width :768px) {
+      .self-driving.jsx-1204389865 {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width :992px) {
+      .self-driving.jsx-1204389865 {
+        display: block;
+      }
+    }
+  </style>
+  <style id="__jsx-3660623565">
+    nav.jsx-3660623565 {
+      margin: auto;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 21px;
+    }
+
+    @media only screen and (min-width :768px) {
+      nav.jsx-3660623565 {
+        margin-top: 0;
+        margin: 0;
+      }
+    }
+
+    .hide.jsx-3660623565 {
+      display: none;
+    }
+
+    .show.jsx-3660623565 {
+      display: block;
+    }
+
+    @media only screen and (min-width :768px) {
+      .hide.jsx-3660623565 {
+        display: block;
+      }
+    }
+  </style>
+  <style id="__jsx-389665269">
+    .chat.jsx-389665269 {
+      display: block;
+      color: #333;
+    }
+
+    @media only screen and (min-width :768px) {
+      .chat.jsx-389665269 {
+        color: #000;
+      }
+    }
+
+    .slack.jsx-389665269 {
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 14px;
+      margin-bottom: 2px;
+      margin-left: 10px;
+      opacity: 0;
+      padding: 3px 2px 3px 1px;
+      text-align: center;
+      vertical-align: middle;
+      min-width: 26px;
+      position: relative;
+    }
+
+    .slack.jsx-389665269::before {
+      border: 4px solid transparent;
+      border-right: 4px solid rgba(0, 0, 0, 0.1);
+      content: ' ';
+      position: absolute;
+      left: -8px;
+      top: 6px;
+    }
+
+    .slack.show-green.jsx-389665269 {
+      background: #DCFFB8;
+      color: #417505;
+    }
+
+    .slack.show-green.jsx-389665269::before {
+      border-right-color: #DCFFB8;
+    }
+
+    .slack-active.jsx-389665269 {
+      opacity: 1;
+    }
+  </style>
+  <style id="__jsx-4094772161">
+    a.jsx-4094772161 {
+      color: #000;
+      font-weight: normal;
+      line-height: 3;
+      cursor: pointer;
+      display: block;
+      -webkit-transition: 0.2s ease-out all;
+      -webkit-transition: 0.2s ease-out all;
+      transition: 0.2s ease-out all;
+    }
+
+    @media only screen and (min-width :768px) {
+      a.jsx-4094772161 {
+        color: #000;
+        display: inline-block;
+        line-height: 2;
+      }
+      a.jsx-4094772161:hover {
+        opacity: .7;
+      }
+    }
+  </style>
+  <style id="__jsx-4181529991">
+    .s-container.jsx-4181529991 {
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 20px;
+    }
+
+    @media only screen and (min-width :768px) {
+      .s-container.jsx-4181529991 {
+        padding: 0 22px;
+      }
+    }
+
+    .s-container-1000.jsx-4181529991 {
+      min-width: 980px;
+    }
+  </style>
+  <style id="__jsx-3190548703">
+    .announcement.jsx-3190548703 {
+      background: rgba(0, 0, 0, .2);
+      -webkit-backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      font-size: 14px;
+      padding: 10px 0;
+      color: #fff;
+      display: none;
+      position: relative;
+      z-index: 10000;
+    }
+
+    @media only screen and (min-width :768px) {
+      .announcement.show-announcement.jsx-3190548703 {
+        display: block;
+      }
+    }
+
+    .announcement.light.jsx-3190548703 {
+      background: #f5f4f9;
+      color: #333;
+    }
+
+    .announcement.jsx-3190548703 a.jsx-3190548703 {
+      color: #fff;
+    }
+
+    header.jsx-3190548703 {
+      background: white;
+      position: relative;
+      text-align: left;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    @media only screen and (min-width :768px) {
+      header.jsx-3190548703 {
+        background: transparent;
+        padding: 30px 0 0 0;
+      }
+      header.paddingBottom.jsx-3190548703 {
+        padding-bottom: 28px;
+      }
+    }
+
+    header.jsx-3190548703 a.jsx-3190548703 {
+      color: rgba(0, 0, 0, .86);
+      font-weight: normal;
+      line-height: 3;
+    }
+
+    @media only screen and (min-width :768px) {
+      header.jsx-3190548703 a.jsx-3190548703 {
+        color: #000;
+        line-height: 2;
+      }
+    }
+
+    header.jsx-3190548703 a.jsx-3190548703:hover {
+      color: #fff;
+    }
+
+    @media only screen and (min-width :768px) {
+      .header-container.jsx-3190548703 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+
+    @media only screen and (min-width :992px) {
+      .header-container.jsx-3190548703 {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+    }
+
+    @media only screen and (min-width :768px) {
+      .nav.jsx-3190548703 {
+        margin-left: 50px;
+      }
+    }
+
+    @media only screen and (min-width :992px) {
+      .nav.jsx-3190548703 {
+        margin-left: 0;
+      }
+    }
+
+    .hide.jsx-3190548703 {
+      display: none;
+    }
+
+    @media only screen and (min-width :768px) {
+      .hide.jsx-3190548703 {
+        display: block;
+      }
+    }
+
+    .show.jsx-3190548703 {
+      display: block;
+    }
+
+    .right.jsx-3190548703 {
+      margin-left: auto;
+    }
+
+    @media only screen and (min-width :768px) {
+      .right.jsx-3190548703 {
+        text-align: right;
+        margin-left: auto;
+      }
+    }
+
+    @media only screen and (min-width :992px) {
+      .right.jsx-3190548703 {
+        margin-left: 0;
+      }
+    }
+
+    .right.jsx-3190548703 a.jsx-3190548703 {
+      display: block;
+      line-height: 3;
+      border-top: 1px solid #f1f1f1;
+    }
+
+    @media only screen and (min-width :768px) {
+      .right.jsx-3190548703 a.jsx-3190548703 {
+        display: inline-block;
+        border: 0;
+      }
+    }
+
+    .right.jsx-3190548703 .login.jsx-3190548703 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    @media only screen and (min-width :768px) {
+      .right.jsx-3190548703 .login.jsx-3190548703 {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-left: 20px;
+      }
+    }
+
+    .right.jsx-3190548703 svg.jsx-3190548703 {
+      width: 14px;
+      margin-left: 6px;
+      display: block;
+      -webkit-transition: .3s ease all;
+      -webkit-transition: .3s ease all;
+      transition: .3s ease all;
+      fill: #000;
+    }
+
+    .light.jsx-3190548703 a.jsx-3190548703 {
+      color: #000;
+    }
+
+    .light.jsx-3190548703 a.jsx-3190548703:hover svg.jsx-3190548703 {
+      fill: black;
+    }
+
+    .light.jsx-3190548703 .right.jsx-3190548703 a.jsx-3190548703 svg.jsx-3190548703,
+    .light.jsx-3190548703 .right.jsx-3190548703 a.jsx-3190548703:hover svg.jsx-3190548703 {
+      fill: rgba(0, 0, 0, .8);
+    }
+
+    .dashboard.jsx-3190548703 {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    @media only screen and (min-width :768px) {
+      .dashboard.jsx-3190548703 {
+        margin-left: 30px;
+      }
+    }
+
+    .dashboard.jsx-3190548703 svg.jsx-3190548703 {
+      width: 14px;
+      display: inline-block;
+      margin-bottom: -2px;
+      margin-left: 6px;
+    }
+
+    @media only screen and (min-width :768px) {
+      .arrow-up.jsx-3190548703 {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width :992px) {
+      .logo.jsx-3190548703,
+      .right.jsx-3190548703 {
+        width: 210px;
+      }
+    }
+  </style>
+  <style id="__jsx-784995007">
+    article.jsx-2647971770 {
+      max-width: 600px;
+      padding: 0 20px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.6;
+      font-size: 17px;
+      padding-bottom: 40px;
+    }
+
+    article.jsx-2647971770 .article-title.jsx-2647971770 {
+      text-align: center;
+      margin: 10px auto 50px auto;
+      max-width: 540px;
+    }
+
+    article.jsx-2647971770 .article-title.jsx-2647971770 h2.jsx-2647971770 {
+      font-size: 38px;
+      font-weight: normal;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    article.jsx-2647971770 .article-title.jsx-2647971770 a.jsx-2647971770 {
+      color: black;
+    }
+
+    article.jsx-2647971770 .excerpt.jsx-2647971770 {
+      font-size: 1.2em;
+    }
+
+    article.jsx-2647971770 figure.jsx-2647971770 {
+      margin-top: 40px;
+      padding: 0;
+      margin-bottom: 60px;
+      -webkit-box-shadow: 0 50px 100px -30px rgba(0, 0, 0, .5);
+      box-shadow: 0 50px 100px -30px rgba(0, 0, 0, .5);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  </style>
+  <style id="__jsx-492885068">
+    .scale-post code,
+    .scale-post pre {
+      background: #f5f4f9;
+      font-size: 15px;
+    }
+
+    .scale-post code {
+      padding: 2px 6px;
+      border-radius: 8px;
+    }
+
+    .scale-post pre {
+      font-size: 12px;
+      padding: 20px;
+      border-radius: 8px;
+      line-height: 1.8;
+      overflow: auto;
+    }
+
+    .scale-post blockquote {
+      font-style: italic;
+      margin: 0;
+      padding: 20px;
+      background: #f5f4f9;
+      border-left: 4px solid rgba(0, 0, 0, .1);
+    }
+
+    .scale-post img {
+      height: auto;
+      width: auto;
+      max-width: 100%;
+    }
+
+    .scale-post img.size-large {
+      margin: 20px 0;
+    }
+
+    .scale-post figure {
+      width: 100%;
+      margin: 0;
+    }
+
+    @media only screen and (min-width :992px) {
+      .scale-post figure,
+      .scale-post img.size-large {
+        margin-left: -20%;
+        margin-right: -20%;
+        width: 140%;
+        max-width: none;
+      }
+    }
+
+    @media only screen and (min-width :992px) {
+      .scale-post img.size-large {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .scale-post .dropshadow {
+      -webkit-box-shadow: 0 50px 100px -30px rgba(0, 0, 0, .5);
+      box-shadow: 0 50px 100px -30px rgba(0, 0, 0, .5);
+    }
+
+    .scale-post .safari-screnshot {
+      border-radius: 8px;
+      -webkit-box-shadow: 0 50px 100px -30px rgba(0, 0, 0, .5);
+      box-shadow: 0 50px 100px -30px rgba(0, 0, 0, .5);
+    }
+
+    .scale-post ul li,
+    .scale-post ol li {
+      margin-bottom: 20px;
+    }
+  </style>
+  <style id="__jsx-2313454165">
+    button.jsx-2313454165,
+    input.jsx-2313454165 {
+      font-family: var(--font-family);
+    }
+
+    button.jsx-2313454165,
+    input.jsx-2313454165 {
+      border: 0;
+      outline: 0;
+    }
+
+    .btn.jsx-2313454165 {
+      border: 0;
+      outline: 0;
+      text-transform: uppercase;
+      -webkit-letter-spacing: 0.5px;
+      -moz-letter-spacing: 0.5px;
+      -ms-letter-spacing: 0.5px;
+      letter-spacing: 0.5px;
+      border-radius: var(--border-radius, 8px);
+      background: white;
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      white-space: nowrap;
+      cursor: pointer;
+      border: none;
+      -webkit-transition: .2s ease-out all;
+      -webkit-transition: .2s ease-out all;
+      transition: .2s ease-out all;
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    }
+
+    @media only screen and (min-width :768px) {
+      .btn.jsx-2313454165 {
+        font-family: var(--font-family);
+      }
+    }
+
+    .btn.jsx-2313454165:hover,
+    .btn.jsx-2313454165:focus {
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+    }
+
+    .sm.jsx-2313454165 {
+      font-size: 13px;
+      padding: 5px 10px;
+    }
+
+    .md.jsx-2313454165 {
+      font-size: 14px;
+      padding: 7px 12px;
+    }
+
+    .lg.jsx-2313454165 {
+      font-size: 14px;
+      padding: 14px 20px;
+    }
+
+    .no-borders.jsx-2313454165 {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .green.jsx-2313454165 {
+      background: #00FF07;
+      color: #333;
+    }
+
+    .green.jsx-2313454165:hover {
+      background: rgb(0, 230, 6);
+    }
+
+    .primary.jsx-2313454165 {
+      background: #2773FF;
+      color: white;
+      -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, .1);
+      box-shadow: 0 3px 4px rgba(0, 0, 0, .1);
+    }
+
+    .primary.jsx-2313454165:hover {
+      background: rgb(35, 104, 230);
+      -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    }
+
+    .success.jsx-2313454165 {
+      background: black;
+      color: white;
+      -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+    }
+
+    .success.jsx-2313454165:hover {
+      -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, .4);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, .4);
+    }
+
+    .successAlt.jsx-2313454165 {
+      background: rgb(23, 182, 41);
+      color: white;
+      -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+    }
+
+    .successAlt.jsx-2313454165:hover {
+      background: rgb(20, 159, 36);
+      -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+    }
+
+    .danger.jsx-2313454165 {
+      background: rgb(236, 50, 47);
+      color: white;
+      -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+    }
+
+    .danger.jsx-2313454165:hover {
+      background: rgb(189, 40, 38);
+      -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+    }
+
+    .hover-danger.jsx-2313454165:hover {
+      color: white;
+      background: rgb(188, 67, 29);
+      -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+    }
+
+    .default.jsx-2313454165,
+    .dropdown.jsx-2313454165,
+    .dropdown-content.jsx-2313454165 {
+      border: 1px solid rgba(0, 0, 0, .05);
+    }
+
+    .link.jsx-2313454165 {
+      background: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      text-transform: none;
+      -webkit-letter-spacing: 0;
+      -moz-letter-spacing: 0;
+      -ms-letter-spacing: 0;
+      letter-spacing: 0;
+      padding: 0;
+      color: var(--link-color);
+    }
+
+    .link.jsx-2313454165:hover {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .dropdown-container.jsx-2313454165 .dropdown-content.jsx-2313454165 {
+      margin-top: 10px;
+      border-radius: 8px;
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .05);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .05);
+    }
+
+    .info.jsx-2313454165 {
+      background: green;
+      color: white;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+
+    .short.jsx-2313454165 {
+      height: 35px;
+      padding: 10px 22px;
+    }
+
+    .square.jsx-2313454165 {
+      padding: 0;
+      height: 50px;
+      min-width: 50px;
+    }
+
+    .disabled.jsx-2313454165 {
+      background: rgba(0, 0, 0, 0);
+      pointer-events: none;
+      color: rgba(0, 0, 0, .2);
+    }
+
+    .extraShadow.jsx-2313454165 {
+      -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, .4);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, .4);
+    }
+
+    .extraShadow.jsx-2313454165:hover {
+      -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, .4);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .4);
+    }
+  </style>
+  <style id="__jsx-3222152615">
+    .try-banner.jsx-3222152615 {
+      background: #f5f4f9;
+    }
+
+    .try-banner.jsx-3222152615 .try-container.jsx-3222152615 {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    @media only screen and (min-width :768px) {
+      .try-banner.jsx-3222152615 .try-container.jsx-3222152615 {
+        padding: 60px 0;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+    }
+
+    @media only screen and (min-width :992px) {
+      .try-banner.jsx-3222152615 .try-container.jsx-3222152615 {
+        padding: 80px 0;
+      }
+    }
+
+    span.jsx-3222152615 {
+      background-image: -webkit-gradient(linear, left top, right top, from(#FFAD5B), to(#FF8AEF));
+      background-image: linear-gradient(to right, #FFAD5B, #FF8AEF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 24px;
+      margin-right: 0px;
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    @media only screen and (min-width :768px) {
+      span.jsx-3222152615 {
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
+    }
+
+    @media only screen and (min-width :992px) {
+      span.jsx-3222152615 {
+        display: inline-block;
+        font-size: 30px;
+      }
+    }
+
+    .btn.jsx-3222152615 {
+      display: inline-block;
+    }
+
+    .btn-primary.jsx-3222152615 {
+      margin-bottom: 30px;
+    }
+
+    @media only screen and (min-width :768px) {
+      .btn-primary.jsx-3222152615 {
+        margin-bottom: 0;
+      }
+    }
+
+    @media only screen and (min-width :768px) {
+      .btn-default.jsx-3222152615 {
+        margin-left: 30px;
+        position: relative;
+        display: inline-block;
+      }
+    }
+  </style>
+  <style id="__jsx-2603029544">
+    .footer.jsx-2603029544 {
+      padding: 40px 0;
+      font-size: 13px;
+      background: white;
+      color: rgba(0, 0, 0, .56);
+      line-height: 2;
+    }
+
+    @media only screen and (min-width :768px) {
+      .footer.jsx-2603029544 {
+        padding: 80px 0;
+      }
+    }
+
+    .footer-border.jsx-2603029544 {
+      border-top: 1px solid #f1f1f1;
+    }
+
+    ul.jsx-2603029544 {
+      padding: 0;
+      margin: 0;
+    }
+
+    a.jsx-2603029544 {
+      color: var(--text-color);
+      font-weight: normal;
+    }
+
+    .row.jsx-2603029544 {
+      display: grid;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      grid-template-columns: 150px 150px;
+    }
+
+    @media only screen and (min-width :768px) {
+      .row.jsx-2603029544 {
+        grid-row-gap: 50px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media only screen and (min-width :992px) {
+      .row.jsx-2603029544 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+    }
+
+    h5.jsx-2603029544 {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .content.jsx-2603029544 {
+      margin-bottom: 20px;
+    }
+
+    @media only screen and (min-width :768px) {
+      .content.jsx-2603029544 {
+        display: block;
+        margin: 0;
+      }
+    }
+
+    .footer.jsx-2603029544 p.jsx-2603029544 {
+      margin-bottom: 0;
+    }
+
+    .brand.jsx-2603029544 .logo.jsx-2603029544 {
+      margin-bottom: 30px;
+      max-width: 70px;
+    }
+
+    .brand.jsx-2603029544 p.jsx-2603029544 {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .social-icons.jsx-2603029544 {
+      margin: 20px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .social-icons.jsx-2603029544 a.jsx-2603029544 {
+      background: #f1f1f1;
+      width: 38px;
+      height: 38px;
+      border-radius: var(--border-radius);
+      margin-right: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-transition: all .4s ease;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease;
+    }
+
+    .social-icons.jsx-2603029544 a.jsx-2603029544:hover i.jsx-2603029544 {
+      -webkit-filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+
+    .social-icons.jsx-2603029544 a.jsx-2603029544 i.jsx-2603029544 {
+      margin: 0;
+      display: block;
+      height: auto;
+      text-align: center;
+      -webkit-filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    .social-icons.jsx-2603029544 a.facebook.jsx-2603029544 i.jsx-2603029544 {
+      opacity: .7;
+    }
+
+    .social-icons.jsx-2603029544 a.facebook.jsx-2603029544:hover {
+      opacity: 1;
+      background: #E2EAFD;
+    }
+
+    .social-icons.jsx-2603029544 a.twitter.jsx-2603029544:hover {
+      background: #E8F2FF;
+    }
+
+    ul.jsx-2603029544 {
+      list-style: none;
+    }
+
+    .row.jsx-2603029544 li.jsx-2603029544 {
+      line-height: 2.4;
+    }
+
+    .copyright.jsx-2603029544 {
+      margin-top: 0;
+      border-top: 1px solid #f1f1f1;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    @media only screen and (min-width :768px) {
+      .copyright.jsx-2603029544 {
+        margin-top: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: left;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+    }
+
+    .contact.jsx-2603029544 {
+      margin-top: 20px;
+    }
+
+    .links.jsx-2603029544 {
+      margin-top: 20px;
+    }
+
+    @media only screen and (min-width :768px) {
+      .links.jsx-2603029544 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 0;
+      }
+      .links.jsx-2603029544 li.jsx-2603029544 {
+        margin-left: 30px;
+      }
+    }
+  </style>
+  <style id="__jsx-2499715745">
+    .title.jsx-2499715745 {
+      padding: 30px 0;
+      background: white;
+      border-top: 1px solid #f6f6f6;
+      margin-bottom: 0px;
+    }
+
+    .title.jsx-2499715745 div.jsx-2499715745 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .title.jsx-2499715745 div.jsx-2499715745 .social.jsx-2499715745 {
+      -webkit-transition: all .4s ease;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .title.jsx-2499715745 div.jsx-2499715745 .social.jsx-2499715745 a.jsx-2499715745:hover {
+      -webkit-filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+
+    .title.jsx-2499715745 div.jsx-2499715745 .social.jsx-2499715745 .facebook.jsx-2499715745 {
+      opacity: .7;
+    }
+
+    .title.jsx-2499715745 div.jsx-2499715745 .social.jsx-2499715745 .twitter.jsx-2499715745 {
+      margin-left: 20px;
+    }
+
+    .title.jsx-2499715745 h3.jsx-2499715745 {
+      margin: 0;
+    }
+
+    .title.jsx-2499715745 h3.jsx-2499715745 a.jsx-2499715745 {
+      color: black;
+    }
+
+    .category.jsx-2499715745 {
+      margin: 0;
+      -webkit-letter-spacing: 1px;
+      -moz-letter-spacing: 1px;
+      -ms-letter-spacing: 1px;
+      letter-spacing: 1px;
+      display: inline-block;
+      font-size: 12px;
+      padding: 2px 10px;
+      border-radius: 100px;
+      background: #FEEEFF;
+      color: #7A217A;
+      text-transform: uppercase;
+    }
+
+    .try.jsx-2499715745 {
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nextjsWrapperDiv">
+    <div id="__next">
+      <div data-reactroot="">
+        <div class="jsx-2499715745">
+          <div class="jsx-2499715745 header">
+            <div class="jsx-3190548703">
+              <div class="jsx-3190548703 announcement light">We are introducing <a class="jsx-3190548703" href="/sensor-fusion-annotation">Sensor Fusion Annotation<span class="jsx-929027911"><svg xmlns="http://www.w3.org/2000/svg" width="15px" height="8px" fill="rgba(0,0,0,1)" viewBox="0 0 20 10" class="jsx-929027911 "><g fill-rule="evenodd" class="jsx-929027911"><polygon points="6 5 0 10 0 0" class="jsx-929027911"></polygon><polygon points="13 5 7 10 7 0" opacity=".5" class="jsx-929027911"></polygon><polygon points="20 5 14 10 14 0" opacity=".25" class="jsx-929027911"></polygon></g></svg></span></a></div>
+              <header
+                class="jsx-3190548703 paddingBottom light">
+                <div class="jsx-4181529991 s-container">
+                  <div class="jsx-3190548703 header-container"><button type="button" class="jsx-3387064800 nav-trigger"><span class="jsx-3387064800"></span></button>
+                    <div class="jsx-3190548703 logo">
+                      <h1 class="jsx-1750654240 logo"><a class="jsx-1750654240" href="/"><div class="jsx-1633575620"><svg width="100%" fill="#000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486 159" class="jsx-1633575620 "><path d="M358.78 9.97v140a9 9 0 0 1-18 0v-140a9 9 0 0 1 18 0zm76 41c-29.78 0-54 24.22-54 54s24.22 54 54 54c16.06 0 31.46-6.48 42.25-17.78a9 9 0 0 0-13.01-12.43c-7.41 7.76-18.07 12.21-29.24 12.21-19.85 0-36-16.15-36-36s16.15-36 36-36a33.07 33.07 0 0 1 32.02 25h-44.02a9 9 0 0 0 0 18h54a9 9 0 0 0 9-9v-1c0-28.12-22.88-51-51-51zM48.33 96.18C24.28 92.49 20 89.38 20 82.47c0-6.71 8.81-13.5 25.64-13.5 8.25 0 20.11 1.66 29.7 9.54a9 9 0 1 0 11.44-13.9C73.06 53.34 56.84 50.97 45.64 50.97 15.65 50.97 2 67.3 2 82.47c0 7.8 2.85 18.44 16.42 24.82 7.92 3.72 17.72 5.22 27.19 6.68 23.9 3.67 28.15 6.72 28.15 13.5 0 8.08-10.11 13.5-25.15 13.5-15.93 0-28.06-6.46-33.88-10.31a9 9 0 1 0-9.93 15.01 80.3 80.3 0 0 0 43.82 13.3c29.81 0 43.15-15.82 43.15-31.5-.01-24.64-25.11-28.48-43.44-31.29zm109.43-27.21a32.94 32.94 0 0 1 27.5 14.77 9 9 0 1 0 14.99-9.97 50.93 50.93 0 0 0-42.5-22.81c-29.78 0-54 24.22-54 54s24.22 54 54 54c17.12 0 33-8.53 42.5-22.81a9 9 0 0 0-14.99-9.97 32.97 32.97 0 0 1-27.5 14.77c-19.85 0-36-16.15-36-36a36.02 36.02 0 0 1 36-35.98zm110.02-18c-29.78 0-54 24.22-54 54s24.22 54 54 54h6a9 9 0 0 0 0-18h-6c-19.85 0-36-16.15-36-36s16.15-36 36-36c18.2 0 33 14.8 33 33v48a9 9 0 0 0 18 0v-48c0-28.12-22.88-51-51-51z" class="jsx-1633575620"></path></svg></div></a></h1></div>
+                    <div class="jsx-3190548703 nav">
+                      <nav class="jsx-3660623565 hide">
+                        <ul class="jsx-1204389865">
+                          <li class="jsx-1204389865">
+                            <div class="jsx-1204389865 dropdown"><span class="jsx-2705945360"><a class="jsx-2705945360">Products</a></span></div>
+                          </li>
+                          <li class="jsx-1204389865 self-driving"><span class="jsx-2705945360"><a class="jsx-2705945360" href="/image-annotation/self-driving-cars">Self Driving Cars</a></span></li>
+                          <li class="jsx-1204389865"><span class="jsx-2705945360"><a class="jsx-2705945360" href="/pricing">Pricing</a></span></li>
+                          <li class="jsx-1204389865">
+                            <div class="jsx-1204389865 dropdown"><span class="jsx-2705945360"><a class="jsx-2705945360">Company</a></span></div>
+                          </li>
+                          <li class="jsx-1204389865"><span class="jsx-2705945360"><a class="jsx-2705945360" href="https://docs.scaleapi.com">Documentation</a></span></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="jsx-3190548703 hide right"><span class="jsx-4094772161"><a class="jsx-4094772161" href="https://chat.scaleapi.com/"><span></span><span class="jsx-389665269 chat">Chat<span class="jsx-389665269 slack show-green">0</span></span>
+                      </a>
+                      </span><span class="jsx-2705945360"><a class="jsx-2705945360" href="/login"><span class="jsx-3190548703 login">Log In<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="jsx-3190548703"><path d="m49.801 30.102l14 14h-42.102c-3.3008 0-6 2.6992-6 6 0 3.3008 2.6992 6 6 6h42.102l-14 14c-2.3984 2.3008-2.3984 6.1016-0.10156 8.5 2.3008 2.3984 6.1016 2.3984 8.5 0.10156l0.10156-0.10156 24.199-24.199c0.10156-0.10156 0.30078-0.30078 0.39844-0.39844l0.50391-0.50391 0.19922-0.39844v-0.10156l0.19922-0.39844v-0.10156l0.19922-0.5v-0.10156l0.10156-0.5v-0.30078l0.10156-0.39844v-0.60156-0.60156l0.10156-0.39844v-0.19922l-0.10156-0.5v-0.10156l-0.20312-0.49609v-0.10156l-0.19922-0.39844v-0.10156l-0.19922-0.39844-0.50391-0.50391c-0.10156-0.19922-0.30078-0.30078-0.39844-0.39844l-24.301-24.199c-2.1992-2.5-6-2.6992-8.5-0.39844-2.5 2.1992-2.6992 6-0.39844 8.5l0.30078 0.30078z" class="jsx-3190548703"></path></svg></span></a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                </header>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div></div>
+              <div class="jsx-2499715745">
+                <div class="jsx-2499715745 title">
+                  <div class="jsx-4181529991 s-container">
+                    <div class="jsx-2499715745">
+                      <h3 class="jsx-2499715745"><a class="jsx-2499715745" href="/blog">Blog</a></h3>
+                      <h5 class="jsx-2499715745 category">Engineering</h5>
+                      <div class="jsx-2499715745 social"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://scaleapi.com/blog/increasing-the-performance-of-dynamic-next-js-websites" class="jsx-2499715745 facebook"><svg style="width:10px;display:block;fill:#39579A" fill="#76A9EA" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 21"><path fill-rule="evenodd" d="M199.926126,4479.00437 L197.202896,4479 C194.143441,4479 192.166287,4481.02849 192.166287,4484.16813 L192.166287,4486.55098 L189.428201,4486.55098 C189.191598,4486.55098 189,4486.7428 189,4486.9794 L189,4490.43188 C189,4490.66849 189.191817,4490.86009 189.428201,4490.86009 L192.166287,4490.86009 L192.166287,4499.5718 C192.166287,4499.8084 192.357885,4500 192.594488,4500 L196.166911,4500 C196.403514,4500 196.595113,4499.80818 196.595113,4499.5718 L196.595113,4490.86009 L199.796573,4490.86009 C200.033176,4490.86009 200.224775,4490.66849 200.224775,4490.43188 L200.226085,4486.9794 C200.226085,4486.8658 200.180862,4486.757 200.100683,4486.6766 C200.020505,4486.5962 199.91127,4486.55098 199.797665,4486.55098 L196.595113,4486.55098 L196.595113,4484.53101 C196.595113,4483.56013 196.826472,4483.06726 198.091196,4483.06726 L199.925689,4483.0666 C200.162074,4483.0666 200.353672,4482.87479 200.353672,4482.6384 L200.353672,4479.43257 C200.353672,4479.1964 200.162292,4479.00481 199.926126,4479.00437 Z" transform="translate(-189 -4479)"></path></svg></a>
+                        <a
+                          target="_blank" rel="noopener noreferrer" href="https://twitter.com/share" data-text="Increasing the Performance of Dynamic Next.JS Websites" data-url="https://www.scaleapi.com/blog/increasing-the-performance-of-dynamic-next-js-websites"
+                          class="jsx-2499715745 twitter"><svg style="width:20px;display:block;fill:#76A9EA" fill="#76A9EA" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14"><path fill="#76A9EA" d="M253.147652,4483.62863 C252.773701,4483.79446 252.385511,4483.92528 251.987185,4484.01998 C252.426094,4483.60291 252.756097,4483.08123 252.942272,4482.49894 L252.942272,4482.49894 C252.995412,4482.33271 252.814859,4482.18897 252.664753,4482.27797 L252.664753,4482.27797 C252.110618,4482.60666 251.513724,4482.85324 250.890609,4483.01094 C250.854458,4483.02009 250.817157,4483.02472 250.779733,4483.02472 C250.666231,4483.02472 250.555888,4482.98258 250.469099,4482.90609 C249.806139,4482.3218 248.953475,4482 248.068229,4482 C247.685168,4482 247.298414,4482.05971 246.918677,4482.17748 C245.742125,4482.5424 244.834309,4483.51292 244.549486,4484.71031 C244.442631,4485.15944 244.413702,4485.60898 244.463436,4486.04641 C244.46914,4486.09668 244.445381,4486.13176 244.430731,4486.14822 C244.405002,4486.17707 244.368522,4486.1936 244.330647,4486.1936 C244.326421,4486.1936 244.322071,4486.1934 244.317762,4486.19299 C241.74233,4485.95371 239.419919,4484.71294 237.778317,4482.69928 L237.778317,4482.69928 C237.694606,4482.59657 237.534078,4482.60916 237.467355,4482.72361 L237.467355,4482.72361 C237.145887,4483.27512 236.976003,4483.90591 236.976003,4484.54777 C236.976003,4485.53146 237.37121,4486.45848 238.057683,4487.13429 C237.769002,4487.06584 237.489596,4486.95804 237.23005,4486.81389 L237.23005,4486.81389 C237.104483,4486.74413 236.949987,4486.83379 236.948222,4486.97741 L236.948222,4486.97741 C236.930249,4488.43875 237.785827,4489.73906 239.067511,4490.32459 C239.0417,4490.3252 239.015889,4490.32549 238.990037,4490.32549 C238.786873,4490.32549 238.581165,4490.30587 238.378699,4490.26718 L238.378699,4490.26718 C238.237293,4490.24018 238.118497,4490.37432 238.162404,4490.51142 L238.162404,4490.51142 C238.578416,4491.81021 239.696699,4492.76756 241.034929,4492.98492 C239.924278,4493.73048 238.630899,4494.12376 237.28475,4494.12376 L236.865086,4494.12352 C236.735785,4494.12352 236.626427,4494.2078 236.593476,4494.33304 C236.561017,4494.45639 236.620805,4494.58651 236.731066,4494.65065 C238.247962,4495.53343 239.978198,4496 241.735477,4496 C243.27367,4496 244.712518,4495.69474 246.012093,4495.09276 C247.203459,4494.54088 248.256251,4493.75199 249.141209,4492.74798 C249.965601,4491.81272 250.610259,4490.73305 251.057211,4489.53901 C251.483276,4488.40083 251.708476,4487.18636 251.708476,4486.02688 L251.708476,4485.97164 C251.708435,4485.78547 251.792639,4485.61029 251.939543,4485.49104 C252.497003,4485.03843 252.982445,4484.50563 253.382331,4483.90747 L253.382331,4483.90747 C253.487913,4483.74952 253.321394,4483.55157 253.147652,4483.62863 L253.147652,4483.62863 Z" transform="translate(-236 -4482)"></path></svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <article class="jsx-2647971770 scale-post">
+              <div class="jsx-2647971770 article-title">
+                <h2 class="jsx-2647971770">Increasing the Performance of Dynamic Next.JS Websites</h2>
+                <p class="jsx-2647971770">by <a target="_blank" href="https://twitter.com/guidomaliandi" class="jsx-2647971770">Guido Maliandi</a> on <strong class="jsx-2647971770">December 06 2017</strong></p>
+              </div>
+              <figure class="jsx-2647971770"><img src="https://scaleapi.wpengine.com/wp-content/uploads/2017/12/Twitter-Card-2.svg" class="jsx-2647971770" /></figure>
+              <div class="jsx-2647971770 ">
+                <p>One of the most obvious signs that a site is made with <a href="https://github.com/zeit/next.js/">Next.JS</a> is that you load the page, you click a link to another section and it loads instantly. That’s because when a page is loaded,
+                  <a href="https://github.com/zeit/next.js/">Next.JS</a> will download in the background all the other pages linked with tags.</p>
+                <p>
+                  <a class="link-preview" href="https://github.com/zeit/next.js/"></a></p>
+                </p>
+                <p>This works great for static pages, but as soon as you have to fetch some data in the <code>getInitialProps</code>, loading that page will take time even if it the page code is prefetched. And what is worse — unless you explicitly add a
+                  loading indicator, it will usually take time with no indication in the UI!</p>
+                <p>Prefetching and caching data is not trivial — for example, it could be wrong to serve a slightly outdated version of certain information. Also, different data could have different caching rules. Here at Scale we decided to implement a
+                  lightweight caching and data prefetching strategy, which allows having this instant navigation experience without compromising data freshness.</p>
+                <h2>Caching in getInitialProps</h2>
+                <p>On certain parts of our site, we know it is OK to show data that is a few minutes old. For those cases, we implemented a simple caching strategy that stores data with a 5 minute TTL.<br /> The implementation uses an abstraction around
+                  the fetch api that we called <code>cached-json-fetch</code>:</p>
+                <pre>import lscache from 'lscache';
+import fetch from 'isomorphic-fetch';
+
+const TTL_MINUTES = 5;
+
+export default async function(url, options) {
+  // We don't cache anything when server-side rendering.
+  // That way if users refresh the page they always get fresh data.
+  if (typeof window === 'undefined') {
+    return fetch(url, options).then(response =&gt; response.json());
+  }
+
+  let cachedResponse = lscache.get(url);
+
+  // If there is no cached response,
+  // do the actual call and store the response
+  if (cachedResponse === null) {
+    cachedResponse = await fetch(url, options)
+      .then(response =&gt; response.json());
+    lscache.set(url, cachedResponse, TTL_MINUTES);
+  }
+
+  return cachedResponse;
+}
+
+export function overrideCache(key, val) {
+  lscache.set(key, val, TTL_MINUTES);
+}
+</pre>
+                <p>We then use this in the <code>getInitialProps</code> of our pages:</p>
+                <pre>import React from 'react';
+import cachedFetch, { overrideCache } from 'lib/cached-json-fetch';
+
+const SOME_DATA_URL = '/some_data';
+
+export default class SomePage extends React.Component {
+  static async getInitialProps(ctx) {
+    const someData = await cachedFetch(SOME_DATA_URL);
+    const isServerRendered = !!ctx.req;
+    return { someData, isServerRendered };
+  }
+
+  componentDidMount() {
+    // When the page is server-rendered,
+    // we override the value in the client cache
+    if (this.props.isServerRendered) {
+      overrideCache(SOME_DATA_URL, this.props.someData);
+    }
+  }
+}
+</pre>
+                <p>Now, when we client-navigate to this page, it will check the cache first before fetching the data from the server. Alternatively, on a full page reload, it will always fetch the latest data from the server and reset the TTL.</p>
+                <p><a class="link-preview" href="https://www.npmjs.com/package/lscache"></a></p></p>
+                <h2>Prefetching data</h2>
+                <p>With a caching layer like this in place, it is extremely straightforward to add prefetching. In the example above, all we need to do is call <code>getInitialProps</code> so the cache is populated with all the necessary data to load the
+                  page. Now, if this page is client-navigated to before the TTL expires, it will load instantly just like a static page!</p>
+                <p>To achieve this, we can create a simple abstraction over Link, which not only downloads the page structure in the background but also calls its <code>getInitialProps</code> to populate the cache:</p>
+                <pre>import React from 'react';
+import Link from 'next/link';
+import { resolve, parse } from 'url';
+import Router from 'next/router';
+
+export default class DataPrefetchLink extends Link {
+  async prefetch() {
+    if (typeof window === 'undefined') {
+      return;
+    }
+
+    const { pathname } = window.location;
+    const href = resolve(pathname, this.props.href);
+    const { query } = parse(this.props.href, true);
+    const Component = await Router.prefetch(href);
+
+    if (this.props.withData &amp;&amp; Component) {
+      const ctx = {pathname: href, query, isVirtualCall: true};
+      await Component.getInitialProps(ctx);
+    }
+  }
+}
+</pre>
+                <p>Using this in our pages is as simple as: <code>&lt;Link prefetch withData href="…"&gt;</code>.</p>
+                <p>In case you have some calls in your page’s <code>getInitialProps</code> that do not use a cache, you can use the <code>isVirtualCall</code> flag in the context to avoid making them when the method is called for caching purposes only. For
+                  example:</p>
+                <pre>import React from 'react';
+import cachedFetch, { overrideCache } from 'lib/cached-json-fetch';
+import fetch from 'isomorphic-fetch';
+
+const SOME_DATA_URL = '/some_data';
+
+export default class SomePage extends React.Component {
+  static async getInitialProps(ctx) {
+    const someData = await cachedFetch(SOME_DATA_URL);
+    const isServerRendered = !!ctx.req;
+    const isVirtualCall = ctx.isVirtualCall;
+
+    // No need to call this when prefetching the page,
+    // since this data won’t be cached
+    let someNonCachedData;
+    if (!isVirtualCall) {
+      someNonCachedData = await fetch('/some_non_cached_data')
+        .then(response =&gt; response.json());
+    }
+
+    return { someData, someNonCachedData, isServerRendered };
+  }
+
+  componentDidMount() {
+    // When the page is server-rendered,
+    // we override the value in the client cache
+    if (this.props.isServerRendered) {
+      overrideCache(SOME_DATA_URL, this.props.someData);
+    }
+  }
+}
+</pre>
+                <p>The key element that makes this possible is that the programmatic prefetch API through <code>Router.prefetch</code> returns the page’s constructor, so we can call the <code>getInitialProps</code> directly on that object! You can find this
+                  extended Link component in npm as <a href="https://www.npmjs.com/package/data-prefetch-link">data-prefetch-link</a>.</p>
+                <p>In conclusion, we learned that with some fine-tuning we can make our dynamic next.js pages load as fast as static pages, without sacrificing the freshness of the data or the flexibility to choose which data we want to cache. We hope this
+                  helps you make your web platforms faster!</p>
+              </div>
+            </article>
+          </div>
+          <div class="jsx-2499715745 try">
+            <div class="jsx-3222152615">
+              <section class="jsx-3222152615 try-banner">
+                <div class="jsx-4181529991 s-container">
+                  <div class="jsx-3222152615 try-container"><span class="jsx-3222152615">Get started for free today</span>
+                    <div class="jsx-3222152615 btn-primary"><span class="jsx-2313454165"><a class="jsx-2313454165 default lg btn success" href="/signup">Create free Account</a></span></div>
+                    <div class="jsx-3222152615 btn-default"><span class="jsx-2313454165"><a class="jsx-2313454165 default lg btn" href="https://docs.scaleapi.com">Learn More</a></span></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <footer class="jsx-2603029544 footer footer-border">
+            <div class="jsx-4181529991 s-container">
+              <div class="jsx-2603029544 row">
+                <div class="jsx-2603029544 col brand">
+                  <div class="jsx-2603029544 logo"><a class="jsx-2603029544" href="/"><svg style="width:100%;height:100%;display:block" viewBox="0 0 486 159"><path d="M358.78 9.97v140a9 9 0 0 1-18 0v-140a9 9 0 0 1 18 0zm76 41c-29.78 0-54 24.22-54 54s24.22 54 54 54c16.06 0 31.46-6.48 42.25-17.78 3.43-3.59 3.3-9.29-.29-12.72-3.59-3.43-9.29-3.3-12.72.29-7.41 7.76-18.07 12.21-29.24 12.21-19.85 0-36-16.15-36-36s16.15-36 36-36c15.44 0 28.43 10.66 32.02 25h-44.02a9 9 0 0 0 0 18h54a9 9 0 0 0 9-9v-1c0-28.12-22.88-51-51-51zM48.33 96.18C24.28 92.49 20 89.38 20 82.47c0-6.71 8.81-13.5 25.64-13.5 8.25 0 20.11 1.66 29.7 9.54a8.999 8.999 0 0 0 12.67-1.23c3.16-3.84 2.6-9.51-1.23-12.67-13.72-11.27-29.94-13.64-41.14-13.64C15.65 50.97 2 67.3 2 82.47c0 7.8 2.85 18.44 16.42 24.82 7.92 3.72 17.72 5.22 27.19 6.68 23.9 3.67 28.15 6.72 28.15 13.5 0 8.08-10.11 13.5-25.15 13.5-15.93 0-28.06-6.46-33.88-10.31a8.986 8.986 0 0 0-12.47 2.54c-2.74 4.14-1.61 9.73 2.54 12.47 12.96 8.58 28.52 13.3 43.82 13.3 29.81 0 43.15-15.82 43.15-31.5-.01-24.64-25.11-28.48-43.44-31.29zm109.43-27.21c11.08 0 21.36 5.52 27.5 14.77 2.75 4.14 8.34 5.27 12.48 2.51 4.14-2.75 5.27-8.34 2.51-12.48-9.49-14.28-25.38-22.81-42.5-22.81-29.78 0-54 24.22-54 54s24.22 54 54 54c17.12 0 33-8.53 42.5-22.81 2.75-4.14 1.63-9.73-2.51-12.48s-9.73-1.63-12.48 2.51c-6.15 9.25-16.43 14.77-27.5 14.77-19.85 0-36-16.15-36-36s16.15-35.98 36-35.98zm110.02-18c-29.78 0-54 24.22-54 54s24.22 54 54 54h6a9 9 0 0 0 0-18h-6c-19.85 0-36-16.15-36-36s16.15-36 36-36c18.2 0 33 14.8 33 33v48a9 9 0 0 0 18 0v-48c0-28.12-22.88-51-51-51z" fill-rule="nonzero"></path></svg></a></div>
+                  <p
+                    class="jsx-2603029544">Humans On-Demand.</p>
+                    <p class="jsx-2603029544">Get tasks done within minutes.</p>
+                    <div class="jsx-2603029544 social-icons"><a href="https://facebook.com/scaleapi" rel="noopener noreferrer" target="_blank" class="jsx-2603029544 facebook"><i class="jsx-2603029544"><svg style="width:10px;display:block;fill:#39579A" fill="#76A9EA" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 21"><path fill-rule="evenodd" d="M199.926126,4479.00437 L197.202896,4479 C194.143441,4479 192.166287,4481.02849 192.166287,4484.16813 L192.166287,4486.55098 L189.428201,4486.55098 C189.191598,4486.55098 189,4486.7428 189,4486.9794 L189,4490.43188 C189,4490.66849 189.191817,4490.86009 189.428201,4490.86009 L192.166287,4490.86009 L192.166287,4499.5718 C192.166287,4499.8084 192.357885,4500 192.594488,4500 L196.166911,4500 C196.403514,4500 196.595113,4499.80818 196.595113,4499.5718 L196.595113,4490.86009 L199.796573,4490.86009 C200.033176,4490.86009 200.224775,4490.66849 200.224775,4490.43188 L200.226085,4486.9794 C200.226085,4486.8658 200.180862,4486.757 200.100683,4486.6766 C200.020505,4486.5962 199.91127,4486.55098 199.797665,4486.55098 L196.595113,4486.55098 L196.595113,4484.53101 C196.595113,4483.56013 196.826472,4483.06726 198.091196,4483.06726 L199.925689,4483.0666 C200.162074,4483.0666 200.353672,4482.87479 200.353672,4482.6384 L200.353672,4479.43257 C200.353672,4479.1964 200.162292,4479.00481 199.926126,4479.00437 Z" transform="translate(-189 -4479)"></path></svg></i></a>
+                      <a
+                        rel="noopener noreferrer" target="_blank" href="https://twitter.com/scaleapi" class="jsx-2603029544 twitter"><i class="jsx-2603029544"><svg style="width:20px;display:block;fill:#76A9EA" fill="#76A9EA" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14"><path fill="#76A9EA" d="M253.147652,4483.62863 C252.773701,4483.79446 252.385511,4483.92528 251.987185,4484.01998 C252.426094,4483.60291 252.756097,4483.08123 252.942272,4482.49894 L252.942272,4482.49894 C252.995412,4482.33271 252.814859,4482.18897 252.664753,4482.27797 L252.664753,4482.27797 C252.110618,4482.60666 251.513724,4482.85324 250.890609,4483.01094 C250.854458,4483.02009 250.817157,4483.02472 250.779733,4483.02472 C250.666231,4483.02472 250.555888,4482.98258 250.469099,4482.90609 C249.806139,4482.3218 248.953475,4482 248.068229,4482 C247.685168,4482 247.298414,4482.05971 246.918677,4482.17748 C245.742125,4482.5424 244.834309,4483.51292 244.549486,4484.71031 C244.442631,4485.15944 244.413702,4485.60898 244.463436,4486.04641 C244.46914,4486.09668 244.445381,4486.13176 244.430731,4486.14822 C244.405002,4486.17707 244.368522,4486.1936 244.330647,4486.1936 C244.326421,4486.1936 244.322071,4486.1934 244.317762,4486.19299 C241.74233,4485.95371 239.419919,4484.71294 237.778317,4482.69928 L237.778317,4482.69928 C237.694606,4482.59657 237.534078,4482.60916 237.467355,4482.72361 L237.467355,4482.72361 C237.145887,4483.27512 236.976003,4483.90591 236.976003,4484.54777 C236.976003,4485.53146 237.37121,4486.45848 238.057683,4487.13429 C237.769002,4487.06584 237.489596,4486.95804 237.23005,4486.81389 L237.23005,4486.81389 C237.104483,4486.74413 236.949987,4486.83379 236.948222,4486.97741 L236.948222,4486.97741 C236.930249,4488.43875 237.785827,4489.73906 239.067511,4490.32459 C239.0417,4490.3252 239.015889,4490.32549 238.990037,4490.32549 C238.786873,4490.32549 238.581165,4490.30587 238.378699,4490.26718 L238.378699,4490.26718 C238.237293,4490.24018 238.118497,4490.37432 238.162404,4490.51142 L238.162404,4490.51142 C238.578416,4491.81021 239.696699,4492.76756 241.034929,4492.98492 C239.924278,4493.73048 238.630899,4494.12376 237.28475,4494.12376 L236.865086,4494.12352 C236.735785,4494.12352 236.626427,4494.2078 236.593476,4494.33304 C236.561017,4494.45639 236.620805,4494.58651 236.731066,4494.65065 C238.247962,4495.53343 239.978198,4496 241.735477,4496 C243.27367,4496 244.712518,4495.69474 246.012093,4495.09276 C247.203459,4494.54088 248.256251,4493.75199 249.141209,4492.74798 C249.965601,4491.81272 250.610259,4490.73305 251.057211,4489.53901 C251.483276,4488.40083 251.708476,4487.18636 251.708476,4486.02688 L251.708476,4485.97164 C251.708435,4485.78547 251.792639,4485.61029 251.939543,4485.49104 C252.497003,4485.03843 252.982445,4484.50563 253.382331,4483.90747 L253.382331,4483.90747 C253.487913,4483.74952 253.321394,4483.55157 253.147652,4483.62863 L253.147652,4483.62863 Z" transform="translate(-236 -4482)"></path></svg></i></a>
+                    </div>
+                </div>
+                <div class="jsx-2603029544 col products">
+                  <h5 class="jsx-2603029544">Products</h5>
+                  <ul class="jsx-2603029544 content">
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/sensor-fusion">Sensor Fusion</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/semantic-segmentation">Semantic Segmentation</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/2d-boxes">2D Boxes</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/3d-cuboids">3D Cuboids</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/polygons">Polygons</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/lines-splines">Lines &amp; Splines</a></li>
+                  </ul>
+                </div>
+                <div class="jsx-2603029544 col products">
+                  <h5 class="jsx-2603029544 other-products">Other Products</h5>
+                  <ul class="jsx-2603029544 content">
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/image-annotation">Image Annotation</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/ocr-transcription">OCR Transcription</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/categorization">Categorization</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/comparison">Comparison</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/data-collection">Data Collection</a></li>
+                  </ul>
+                </div>
+                <div class="jsx-2603029544 col products">
+                  <h5 class="jsx-2603029544">Company</h5>
+                  <ul class="jsx-2603029544 content">
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/about">About</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/pricing">Pricing</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/blog">Blog</a></li>
+                    <li class="jsx-2603029544"><a class="jsx-2603029544" href="/about#jobs">Jobs</a></li>
+                  </ul>
+                </div>
+                <div class="jsx-2603029544 col products">
+                  <h5 class="jsx-2603029544">Learn</h5>
+                  <ul class="jsx-2603029544 content">
+                    <li class="jsx-2603029544"><a href="http://chat.scaleapi.com" class="jsx-2603029544">Chat</a></li>
+                    <li class="jsx-2603029544"><a href="http://docs.scaleapi.com" class="jsx-2603029544">Documentation</a></li>
+                  </ul>
+                </div>
+                <div class="jsx-2603029544 col products">
+                  <h5 class="jsx-2603029544">Contact</h5>
+                  <div class="jsx-2603029544 content">
+                    <p class="jsx-2603029544">398 11th St.<br class="jsx-2603029544" />San Francisco, CA <br class="jsx-2603029544" />94103<br class="jsx-2603029544" />(415) 382-9382</p>
+                    <ul class="jsx-2603029544 contact">
+                      <li class="jsx-2603029544"><a class="jsx-2603029544" href="/sales"><span class="__cf_email__" data-cfemail="6211030e0711221101030e0703120b4c010d0f">[email&#160;protected]</span></a></li>
+                      <li class="jsx-2603029544"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="89fafcf9f9e6fbfdc9faeae8e5ece8f9e0a7eae6e4">[email&#160;protected]</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="jsx-2603029544 copyright"><span class="jsx-2603029544">Copyright © 2018 Scale Inc. All rights reserved.</span>
+                <ul class="jsx-2603029544 links">
+                  <li class="jsx-2603029544"><a class="jsx-2603029544" href="/terms">Terms of Use &amp; Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div id="__next-error"></div>
+  </div>
+  <div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://cdn.ravenjs.com/3.14.1/raven.min.js" crossOrigin="anonymous"></script>
+    <script>
+      Raven.config("https://d8dc959123af428fb299735daaf31573@sentry.io/110931").install();
+    </script>
+  </div>
+  <script>
+    window.config = {
+      "API_URL": "https://dashboard.scaleapi.com",
+      "STRIPE_KEY": "pk_live_QUS1ISPRQUHMMKNf8XQKLRVp",
+      "NODE_ENV": "production",
+      "SEGMENT_KEY_SCALERS": "jDMA6Hrrfbsq9rsDP6CLUP3A76r8M8xm",
+      "SEGMENT_KEY_CUSTOMERS": "SJT1qKU8SfNyoPhSRnZjuvNjc1r155nN",
+      "DOMAIN": "scaleapi.com",
+      "RECAPTCHA_SITE_KEY": "6LdaOSwUAAAAAJxGDH6PMa4LIQH4Wbr3zO_5PAnP",
+      "FACEBOOK_OAUTH_CLIENT_ID": "118817275449497",
+      "MULTIUSER_SERVER_URL": "https://scale-socket.herokuapp.com"
+    };
+  </script>
+  <div>
+    <script>
+      __NEXT_DATA__ = {
+        "props": {
+          "config": {
+            "API_URL": "https://dashboard.scaleapi.com",
+            "STRIPE_KEY": "pk_live_QUS1ISPRQUHMMKNf8XQKLRVp",
+            "NODE_ENV": "production",
+            "SEGMENT_KEY_SCALERS": "jDMA6Hrrfbsq9rsDP6CLUP3A76r8M8xm",
+            "SEGMENT_KEY_CUSTOMERS": "SJT1qKU8SfNyoPhSRnZjuvNjc1r155nN",
+            "DOMAIN": "scaleapi.com",
+            "RECAPTCHA_SITE_KEY": "6LdaOSwUAAAAAJxGDH6PMa4LIQH4Wbr3zO_5PAnP",
+            "FACEBOOK_OAUTH_CLIENT_ID": "118817275449497",
+            "MULTIUSER_SERVER_URL": "https://scale-socket.herokuapp.com"
+          },
+          "isLoggedIn": null,
+          "email": null,
+          "accountType": null,
+          "user": null,
+          "post": {
+            "id": 6,
+            "date": "2017-12-06T01:08:37",
+            "date_gmt": "2017-12-06T01:08:37",
+            "guid": {
+              "rendered": "http://scaleapi.wpengine.com/?p=6"
+            },
+            "modified": "2018-01-03T23:29:39",
+            "modified_gmt": "2018-01-03T23:29:39",
+            "slug": "increasing-the-performance-of-dynamic-next-js-websites",
+            "status": "publish",
+            "type": "post",
+            "link": "https://scaleapi.wpengine.com/increasing-the-performance-of-dynamic-next-js-websites/",
+            "title": {
+              "rendered": "Increasing the Performance of Dynamic Next.JS Websites"
+            },
+            "content": {
+              "rendered": "\u003cp\u003eOne of the most obvious signs that a site is made with \u003ca href=\"https://github.com/zeit/next.js/\"\u003eNext.JS\u003c/a\u003e is that you load the page, you click a link to another section and it loads instantly. That’s because when a page is loaded, \u003ca href=\"https://github.com/zeit/next.js/\"\u003eNext.JS\u003c/a\u003e will download in the background all the other pages linked with tags.\u003c/p\u003e\n\u003cp\u003e\u003c!--more--\u003e\u003c/p\u003e\n\u003cp\u003eThis works great for static pages, but as soon as you have to fetch some data in the \u003ccode\u003egetInitialProps\u003c/code\u003e, loading that page will take time even if it the page code is prefetched. And what is worse — unless you explicitly add a loading indicator, it will usually take time with no indication in the UI!\u003c/p\u003e\n\u003cp\u003ePrefetching and caching data is not trivial — for example, it could be wrong to serve a slightly outdated version of certain information. Also, different data could have different caching rules. Here at Scale we decided to implement a lightweight caching and data prefetching strategy, which allows having this instant navigation experience without compromising data freshness.\u003c/p\u003e\n\u003ch2\u003eCaching in getInitialProps\u003c/h2\u003e\n\u003cp\u003eOn certain parts of our site, we know it is OK to show data that is a few minutes old. For those cases, we implemented a simple caching strategy that stores data with a 5 minute TTL.\u003cbr /\u003e\nThe implementation uses an abstraction around the fetch api that we called \u003ccode\u003ecached-json-fetch\u003c/code\u003e:\u003c/p\u003e\n\u003cpre\u003eimport lscache from 'lscache';\r\nimport fetch from 'isomorphic-fetch';\r\n\r\nconst TTL_MINUTES = 5;\r\n\r\nexport default async function(url, options) {\r\n  // We don't cache anything when server-side rendering.\r\n  // That way if users refresh the page they always get fresh data.\r\n  if (typeof window === 'undefined') {\r\n    return fetch(url, options).then(response =\u0026gt; response.json());\r\n  }\r\n  \r\n  let cachedResponse = lscache.get(url);\r\n  \r\n  // If there is no cached response, \r\n  // do the actual call and store the response\r\n  if (cachedResponse === null) {\r\n    cachedResponse = await fetch(url, options)\r\n      .then(response =\u0026gt; response.json());\r\n    lscache.set(url, cachedResponse, TTL_MINUTES);\r\n  }\r\n  \r\n  return cachedResponse;\r\n}\r\n\r\nexport function overrideCache(key, val) {\r\n  lscache.set(key, val, TTL_MINUTES);\r\n}\r\n\u003c/pre\u003e\n\u003cp\u003eWe then use this in the \u003ccode\u003egetInitialProps\u003c/code\u003e of our pages:\u003c/p\u003e\n\u003cpre\u003eimport React from 'react';\r\nimport cachedFetch, { overrideCache } from 'lib/cached-json-fetch';\r\n\r\nconst SOME_DATA_URL = '/some_data';\r\n\r\nexport default class SomePage extends React.Component {\r\n  static async getInitialProps(ctx) {\r\n    const someData = await cachedFetch(SOME_DATA_URL);\r\n    const isServerRendered = !!ctx.req;\r\n    return { someData, isServerRendered };\r\n  }\r\n\r\n  componentDidMount() {\r\n    // When the page is server-rendered, \r\n    // we override the value in the client cache\r\n    if (this.props.isServerRendered) {\r\n      overrideCache(SOME_DATA_URL, this.props.someData);\r\n    }\r\n  }\r\n}\r\n\u003c/pre\u003e\n\u003cp\u003eNow, when we client-navigate to this page, it will check the cache first before fetching the data from the server. Alternatively, on a full page reload, it will always fetch the latest data from the server and reset the TTL.\u003c/p\u003e\n\u003ch2\u003ePrefetching data\u003c/h2\u003e\n\u003cp\u003eWith a caching layer like this in place, it is extremely straightforward to add prefetching. In the example above, all we need to do is call \u003ccode\u003egetInitialProps\u003c/code\u003e so the cache is populated with all the necessary data to load the page. Now, if this page is client-navigated to before the TTL expires, it will load instantly just like a static page!\u003c/p\u003e\n\u003cp\u003eTo achieve this, we can create a simple abstraction over Link, which not only downloads the page structure in the background but also calls its \u003ccode\u003egetInitialProps\u003c/code\u003e to populate the cache:\u003c/p\u003e\n\u003cpre\u003eimport React from 'react';\r\nimport Link from 'next/link';\r\nimport { resolve, parse } from 'url';\r\nimport Router from 'next/router';\r\n\r\nexport default class DataPrefetchLink extends Link {\r\n  async prefetch() {\r\n    if (typeof window === 'undefined') {\r\n      return;\r\n    }\r\n\r\n    const { pathname } = window.location;\r\n    const href = resolve(pathname, this.props.href);\r\n    const { query } = parse(this.props.href, true);\r\n    const Component = await Router.prefetch(href);\r\n\r\n    if (this.props.withData \u0026amp;\u0026amp; Component) {\r\n      const ctx = {pathname: href, query, isVirtualCall: true};\r\n      await Component.getInitialProps(ctx);\r\n    }\r\n  }\r\n}\r\n\u003c/pre\u003e\n\u003cp\u003eUsing this in our pages is as simple as: \u003ccode\u003e\u0026lt;Link prefetch withData href=\"…\"\u0026gt;\u003c/code\u003e.\u003c/p\u003e\n\u003cp\u003eIn case you have some calls in your page’s \u003ccode\u003egetInitialProps\u003c/code\u003e that do not use a cache, you can use the \u003ccode\u003eisVirtualCall\u003c/code\u003e flag in the context to avoid making them when the method is called for caching purposes only. For example:\u003c/p\u003e\n\u003cpre\u003eimport React from 'react';\r\nimport cachedFetch, { overrideCache } from 'lib/cached-json-fetch';\r\nimport fetch from 'isomorphic-fetch';\r\n\r\nconst SOME_DATA_URL = '/some_data';\r\n\r\nexport default class SomePage extends React.Component {\r\n  static async getInitialProps(ctx) {\r\n    const someData = await cachedFetch(SOME_DATA_URL);\r\n    const isServerRendered = !!ctx.req;\r\n    const isVirtualCall = ctx.isVirtualCall;\r\n\r\n    // No need to call this when prefetching the page, \r\n    // since this data won’t be cached\r\n    let someNonCachedData;\r\n    if (!isVirtualCall) {\r\n      someNonCachedData = await fetch('/some_non_cached_data')\r\n        .then(response =\u0026gt; response.json());\r\n    }\r\n\r\n    return { someData, someNonCachedData, isServerRendered };\r\n  }\r\n\r\n  componentDidMount() {\r\n    // When the page is server-rendered, \r\n    // we override the value in the client cache\r\n    if (this.props.isServerRendered) {\r\n      overrideCache(SOME_DATA_URL, this.props.someData);\r\n    }\r\n  }\r\n}\r\n\u003c/pre\u003e\n\u003cp\u003eThe key element that makes this possible is that the programmatic prefetch API through \u003ccode\u003eRouter.prefetch\u003c/code\u003e returns the page’s constructor, so we can call the \u003ccode\u003egetInitialProps\u003c/code\u003e directly on that object! You can find this extended Link component in npm as \u003ca href=\"https://www.npmjs.com/package/data-prefetch-link\"\u003edata-prefetch-link\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eIn conclusion, we learned that with some fine-tuning we can make our dynamic next.js pages load as fast as static pages, without sacrificing the freshness of the data or the flexibility to choose which data we want to cache. We hope this helps you make your web platforms faster!\u003c/p\u003e\n",
+              "protected": false
+            },
+            "excerpt": {
+              "rendered": "\u003cp\u003eOne of the most obvious signs that a site is made with Next.JS is that you load the page, you click a link to another section and it loads instantly. That’s because when a page is loaded, Next.JS will download in the background all the other pages linked with tags.\u003c/p\u003e\n",
+              "protected": false
+            },
+            "author": {
+              "user_nicename": "Guido Maliandi",
+              "user_url": "https://twitter.com/guidomaliandi"
+            },
+            "featured_media": 40,
+            "comment_status": "open",
+            "ping_status": "open",
+            "sticky": false,
+            "template": "",
+            "format": "standard",
+            "meta": [],
+            "categories": [1],
+            "tags": [],
+            "featured_image_thumbnail_url": "https://scaleapi.wpengine.com/wp-content/uploads/2017/12/Twitter-Card-2.svg",
+            "category_name": ["Engineering"],
+            "formated_date": "December 06 2017",
+            "_links": {
+              "self": [{
+                "href": "https://scaleapi.wpengine.com/wp-json/wp/v2/posts/6"
+              }],
+              "collection": [{
+                "href": "https://scaleapi.wpengine.com/wp-json/wp/v2/posts"
+              }],
+              "about": [{
+                "href": "https://scaleapi.wpengine.com/wp-json/wp/v2/types/post"
+              }],
+              "author": [{
+                "embeddable": true,
+                "href": "https://scaleapi.wpengine.com/wp-json/wp/v2/users/3"
+              }],
+              "replies": [{
+                "embeddable": true,
+                "href": "https://scaleapi.wpengine.com/wp-json/wp/v2/comments?post=6"
+              }],
+              "version-history": [{
+                "href": "https://scaleapi.wpengine.com/wp-json/wp/v2/posts/6/revisions"
+              }],
+              "wp:featuredmedia": [{
+                "embeddable": true,
+                "href": "https://scaleapi.wpengine.com/wp-json/wp/v2/media/40"
+              }],
+              "wp:attachment": [{
+                "href": "https://scaleapi.wpengine.com/wp-json/wp/v2/media?parent=6"
+              }],
+              "wp:term": [{
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://scaleapi.wpengine.com/wp-json/wp/v2/categories?post=6"
+              }, {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://scaleapi.wpengine.com/wp-json/wp/v2/tags?post=6"
+              }],
+              "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }]
+            }
+          }
+        },
+        "pathname": "/blog/post",
+        "query": {
+          "slug": "increasing-the-performance-of-dynamic-next-js-websites",
+          "apiRoute": "posts"
+        },
+        "buildId": "47af7160-1d8f-4117-a808-9335b1447523",
+        "buildStats": {
+          "app.js": {
+            "hash": "a64c4bbbd90b61bfc525c44cd54a2036"
+          }
+        },
+        "assetPrefix": "",
+        "nextExport": false,
+        "err": null,
+        "chunks": []
+      }
+      module = {}
+      __NEXT_LOADED_PAGES__ = []
+      __NEXT_LOADED_CHUNKS__ = []
+
+      __NEXT_REGISTER_PAGE = function(route, fn) {
+        __NEXT_LOADED_PAGES__.push({
+          route: route,
+          fn: fn
+        })
+      }
+
+      __NEXT_REGISTER_CHUNK = function(chunkName, fn) {
+        __NEXT_LOADED_CHUNKS__.push({
+          chunkName: chunkName,
+          fn: fn
+        })
+      }
+    </script>
+    <script async="" id="__NEXT_PAGE__/blog/post" type="text/javascript" src="/_next/47af7160-1d8f-4117-a808-9335b1447523/page/blog/post.js"></script>
+    <script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/47af7160-1d8f-4117-a808-9335b1447523/page/_error.js"></script>
+    <div></div>
+    <script type="text/javascript" src="/_next/a64c4bbbd90b61bfc525c44cd54a2036/app.js" async=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/microlinkjs@latest/umd/microlink.min.js"></script>
+    <script>
+      microlink('.link-preview')
+    </script>
+  </div>
+</body>
+
+</html>

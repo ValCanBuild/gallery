@@ -5,7 +5,7 @@
   "description": "Gallery of sites using microlink.io",
   "main": "index.html",
   "scripts": {
-    "dev": "browser-sync start --server --files \"index.html, README.md, static/**/*.(css|js)\"",
+    "dev": "browser-sync start --server --files \"**/*.html\"",
     "test": "exit 0 "
   },
   "repository": {
